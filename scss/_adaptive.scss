@@ -1,0 +1,375 @@
+@media only screen and (max-width: 1400px) {
+}
+@media only screen and (max-width: 1200px) {
+    .line__blocks {
+        padding: 0 8% 0 8.3%;
+    }
+    .line__block {
+        flex: 0 1 47%;
+        &:nth-child(even)::after {
+            left: -37px;
+        }
+        &:nth-child(odd)::after {
+            right: -35px;
+        }
+    }
+    .blog__item {
+        flex: 1 1 100%;
+    }
+    #blog__item-1 {
+        order: 1;
+    }
+    #blog__item-2 {
+        order: 2;
+    }
+    #blog__item-3 {
+        order: 3;
+    }
+    #blog__item-4 {
+        order: 4;
+    }
+    #blog__cart-img {
+        order: 1;
+    }
+    #blog__cart-text {
+        order: 2;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .nav {
+        padding: 24px 12px;
+    }
+    .intro{
+        padding: 150px 0px;
+    }
+    .about {
+        padding: 30px 0 0 0;
+    }
+
+    .services__card__body {
+        flex: 0 0 45%;
+    }
+    .services__card__icon {
+        position: absolute;
+        z-index: 100;
+        top: -10px;
+        left: 47%;
+        width: 100%;
+        & img {
+            width: 23px;
+            height: 23px;
+            margin: 0 auto;
+        }
+    }
+
+    .history__line::after {
+        right: 85px;
+    }
+
+    .line {
+        &__first-block {
+            align-items: flex-end;
+            padding: 0 50px;
+        }
+
+        &__blocks {
+            flex-direction: column;
+            width: 100%;
+            margin: 0px 100px 0px 0px;
+            padding: 0 0 0 150px;
+        }
+        &__block {
+            display: block;
+            max-width: 800px;
+            &:nth-child(even) {
+                margin: 0px 0px 30px 0px;
+                padding: 29px 70px 32px 23px;
+                &::before {
+                    background: url("../img/icons/right__triangle.svg") center/ 19px no-repeat #e3e3e3;
+                    right: -12px;
+                    left: unset;
+                }
+                &::after {
+                    right: -75px;
+                    left: unset;
+                }
+            }
+            &:nth-child(odd) {
+                &::after {
+                    right: -75px;
+                    left: unset;
+                }
+            }
+        }
+    }
+
+    .tabs {
+        &__block {
+            flex-wrap: wrap;
+            max-height: none;
+        }
+        &__image {
+            flex: 1 1 50%;
+
+            &:nth-child(1) {
+                margin: 0px 0px 0px 0px;
+                order: 1;
+            }
+            &:nth-child(2) {
+                margin: 0px 0px 0px 0px;
+                order: 2;
+            }
+            &:nth-child(3) {
+                margin: 0px 0px 0px 0px;
+                order: 3;
+            }
+            &:nth-child(4) {
+                margin: -120px 0px 0px 0px;
+                order: 4;
+            }
+            &:nth-child(5) {
+                margin: 0px 0px 0px 0px;
+                order: 6;
+            }
+            &:nth-child(6) {
+                margin: -70px 0px 0px 0px;
+                order: 5;
+            }
+            &:nth-child(7) {
+                margin: -60px 0px 0px 0px;
+                order: 8;
+            }
+            &:nth-child(8) {
+                margin: 0px 0px 0px 0px;
+                order: 7;
+                height: 399px;
+            }
+        }
+    }
+
+    .prices {
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__card {
+            margin-bottom: 30px;
+        }
+    }
+
+    .quality {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__body {
+            margin: 30px 0px 30px 0px;
+            padding: 0 10px;
+            text-align: center;
+        }
+    }
+
+    .team {
+        &__cards {
+            justify-content: space-around;
+        }
+        &__card {
+            flex: 0 1 33.333%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .clients {
+        &__up {
+            padding-bottom: 90px;
+        }
+        &__images {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__image {
+            flex: 0 1 33.333%;
+            margin: 0px 0px 30px 0px;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .team__card {
+        flex: 0 0 320px;
+    }
+    .prices__card {
+        flex: 0 0 320px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .intro{
+        padding: 60px 0px;
+    }
+    .services{
+        &__bg{
+            filter: blur(4px);
+        }
+        &__card__body{
+            flex: 0 0 100%;
+        }
+    }
+    .about {
+        &__body{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &__merits {
+            flex-wrap: wrap;
+            padding-bottom: 15px;
+        }
+
+        &__card {
+            flex: 0 1 50%;
+            margin: 0 0 30px 0;
+            &:nth-child(2){
+                border: none;
+            }
+        }
+    }
+    .subtitle {
+        padding: 0 15px;
+    }
+    .slider__body {
+        padding: 0 15px;
+    }
+    .blog {
+        &__item {
+            flex-direction: column;
+        }
+        &__card {
+            flex: 1 1 100%;
+        }
+    }
+    #blog__item-1 {
+        order: 1;
+    }
+    #blog__item-2 {
+        order: 2;
+    }
+    #blog__item-3 {
+        order: 3;
+    }
+    #blog__item-4 {
+        order: 4;
+    }
+
+    .clients__image {
+        flex: 0 1 50%;
+    }
+    .line__blocks{
+        padding: 0px 0px 0px 30px;
+    }
+}
+
+@media only screen and (max-width: 378px) {
+    .about{
+        &__image{
+            height: 300px;
+        }
+        &__body {
+            padding: 70px 15px;
+        }
+        &__buttons{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &__btn{
+            text-align: center;
+        }
+    }
+
+    .services__card__body {
+        flex: 1 0 45%;
+    }
+
+    .history {
+        padding-bottom: 0;
+    }
+    .history__line::after {
+        display: none;
+    }
+    .team{
+        padding: 0px;
+        &__card:last-child{
+            margin: 0px;
+        }
+    }
+    .line {
+        &__first-block {
+            padding: 0;
+        }
+        &__circle {
+            display: none;
+        }
+        &__blocks {
+            padding: 0 15px;
+            margin: 0;
+        }
+    }
+    .tabs {
+        &__items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        &__btn {
+            margin: 0 0 10px 0;
+            flex: 0 1 45%;
+            text-align: center;
+
+            &:last-child {
+                margin: 0px 0px 10px 0px;
+            }
+        }
+
+        &__image {
+            flex: 1 1 100%;
+
+            &:nth-child(1) {
+                margin: 0px 0px 0px 0px;
+                order: 1;
+            }
+            &:nth-child(2) {
+                margin: 0px 0px 0px 0px;
+                order: 2;
+            }
+            &:nth-child(3) {
+                margin: 0px 0px 0px 0px;
+                order: 3;
+            }
+            &:nth-child(4) {
+                margin: 0px 0px 0px 0px;
+                order: 4;
+            }
+            &:nth-child(5) {
+                margin: 0px 0px 0px 0px;
+                order: 6;
+            }
+            &:nth-child(6) {
+                margin: 0px 0px 0px 0px;
+                order: 5;
+            }
+            &:nth-child(7) {
+                margin: 0px 0px 0px 0px;
+                order: 8;
+            }
+            &:nth-child(8) {
+                margin: 0px 0px 0px 0px;
+                order: 7;
+                height: 399px;
+            }
+        }
+        .clients__map img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

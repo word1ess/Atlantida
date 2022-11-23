@@ -1,0 +1,1086 @@
+@import "_null.scss", "_adaptive.scss";
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Crimson+Pro&family=Handlee&family=Indie+Flower&family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat&family=Parisienne&display=swap");
+
+$Monserat: Montserrat;
+$Handle: "Handlee", cursive;
+$Crimson: "Crimson Pro", serif;
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+.title {
+    font-size: 25px;
+    letter-spacing: 1.8px;
+    color: #3e3d3d;
+    font-family: $Handle;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1.4px;
+    font-family: $Crimson;
+}
+
+.icons__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    position: relative;
+    width: 12px;
+    height: 11px;
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &:last-child::after {
+        content: none;
+    }
+}
+
+.btn__black {
+    font-family: $Monserat;
+    font-size: 13.5px;
+    color: #3e3d3d;
+    letter-spacing: 1.35px;
+    border: 2px #3e3d3d solid;
+    transition: 1s ease;
+
+    &:hover {
+        color: #cecece;
+        background: #3e3d3d;
+    }
+}
+
+.white__btn {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5px;
+    font-family: $Monserat;
+    padding: 16px 26px;
+    border: 2px #fff solid;
+    transition: 1s ease;
+    letter-spacing: 1.35px;
+
+    &:hover {
+        background: #fff;
+        color: #3e3d3d;
+    }
+}
+
+.nav {
+    background: #fff;
+    padding: 58px 0 24px 0;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        & a {
+            font-family: $Monserat;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #aaaaaa;
+            margin: 0px 5px 0px 0px;
+        }
+    }
+
+    &__soc {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 29px;
+        width: 70px;
+    }
+    &__icons {
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: #aaaaaa;
+            left: 150%;
+        }
+    }
+}
+
+.intro {
+    background: url("../img/intro.webp") 0 0 / 100% 100% no-repeat;
+    padding: 261px 0 203px 0;
+    position: relative;
+    &::before {
+        content: "";
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.198);
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__suptitle {
+        font-size: 14px;
+        font-family: $Crimson;
+        margin: 0px 0px 25px 0px;
+    }
+
+    &__title {
+        font-size: 50px;
+        text-transform: uppercase;
+        letter-spacing: 3.6px;
+        font-family: $Handle;
+        padding: 35px 15px;
+        background: url("../img/line.webp") 0 0 / 100% 100% no-repeat;
+        margin: 0px 0px 44px 0px;
+        text-align: center;
+    }
+}
+
+.about {
+    padding: 73px 0;
+    background: #e3e3e3;
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image {
+        height: 442px;
+        background: url("../img/about.webp") 0 0 / 100% 100% no-repeat;
+    }
+
+    &__body {
+        padding: 59px 75px 50px 70px;
+        background: #fff;
+    }
+
+    &__title {
+        text-align: center;
+        padding: 0px 0px 27px 0;
+        width: 186px;
+        margin: 0 auto;
+        background: url("../img/Line__once.png") 0 100% no-repeat;
+    }
+
+    &__text {
+        margin: 41px 0 45px 0;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        &:first-child {
+            padding: 14px 25px;
+            margin: 0px 2px 0px 0px;
+        }
+        &:last-child {
+            padding: 14px 35px;
+            margin: 0px 0px 0px 2px;
+        }
+    }
+    &__merits {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0 80px 0;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        flex: 1 1 25%;
+        border-right: 1px solid #b0b0b0;
+
+        &:last-child {
+            border: none;
+        }
+        &__body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $Monserat;
+            color: #3e3d3d;
+            letter-spacing: 1.35px;
+        }
+        &__image {
+            height: 40px;
+            width: 40px;
+            margin: 0px 0px 21px 0px;
+            & img {
+                width: 100%;
+            }
+        }
+        &__title {
+            font-size: 13.5px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 0px 0px 28px 0px;
+        }
+        &__text {
+            font-size: 45.5px;
+            text-align: center;
+        }
+    }
+}
+
+.services {
+    padding: 85px 0px 75px 0px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: "";
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.322);
+        z-index: 2;
+    }
+    &__bg{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        & img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__title {
+        background: url("../img/line__white.webp") 0 100% no-repeat;
+        color: #fff;
+        width: 186px;
+        text-align: center;
+        padding: 0 0 27px 0;
+        margin: 0 0 41px 0;
+    }
+
+    &__subtitle {
+        color: #fff;
+        margin: 0 0 68px 0;
+        padding: 0 70px;
+        text-align: center;
+    }
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        &__body {
+            display: flex;
+            flex: 1 0 23%;
+            position: relative;
+            flex-direction: column;
+            border: 1px solid #d8d8d8;
+            border-top: none;
+            padding: 0 25px;
+            margin: 0 10px 40px 10px;
+        }
+        &__icon {
+            position: absolute;
+            z-index: 100;
+            top: -10px;
+            left: 45%;
+            width: 100%;
+            & img {
+                width: 23px;
+                height: 23px;
+                margin: 0 auto;
+            }
+        }
+        &__title {
+            font-size: 13.5px;
+            line-height: 17.5px;
+            letter-spacing: 1.35px;
+            color: #d8d8d8;
+            text-transform: uppercase;
+            font-family: $Monserat;
+            text-align: center;
+            margin: 56px 0px 28px 0px;
+        }
+        &__text {
+            flex: 1 1 100%;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 1.4px;
+            color: #d8d8d8;
+            font-family: $Crimson;
+            text-align: center;
+            margin: 0px 0px 43px 0px;
+        }
+    }
+}
+
+.history {
+    padding: 57px 0;
+    background: #e3e3e3;
+    &__up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        color: #3e3d3d;
+        background: url("../img/Line__once.png") 0 100% no-repeat;
+        padding: 0 0 27px 0;
+        margin: 0px 0px 27px 0px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: #3e3d3d;
+        margin: 0px 0px 27px 0px;
+    }
+
+    &__line {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 50%;
+            background: #3e3d3d;
+            height: 100%;
+            width: 2px;
+        }
+    }
+}
+.line {
+    &__first-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    &__circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 13.5px;
+        letter-spacing: 1.35px;
+        color: #3e3d3d;
+        background-color: #e3e3e3;
+        border: 2px solid #3e3d3d;
+        border-radius: 50%;
+        width: 73px;
+        height: 73px;
+        text-align: center;
+        font-weight: 600;
+        margin: 0px 0px 43px 0px;
+        z-index: 2;
+    }
+    &__circle__end {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    &__circle-end {
+        margin: 0px 0px 0px 0px;
+        background-color: #3e3d3d;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__block {
+        flex: 0 1 560px;
+        border: 2px solid #3e3d3d;
+        padding: 29px 23px 32px 70px;
+        transition: all 1s ease;
+        height: 100%;
+
+        &:nth-child(odd) {
+            position: relative;
+            padding: 29px 70px 32px 23px;
+            margin: 0px 0px 30px 0px;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                background: url("../img/icons/right__triangle.svg") center/ 19px no-repeat #e3e3e3;
+                width: 12px;
+                height: 19px;
+                right: -12px;
+                top: 20px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                background: #3e3d3d;
+                border-radius: 50%;
+                width: 17px;
+                height: 17px;
+                right: -36.5px;
+                top: 20px;
+            }
+        }
+
+        &:nth-child(even) {
+            margin: 38px 0px 0px 0px;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                background: url("../img/icons/left__triangle.svg") center/ 19px no-repeat #e3e3e3;
+                width: 12px;
+                height: 19px;
+                left: -12px;
+                top: 20px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                background: #3e3d3d;
+                border-radius: 50%;
+                width: 17px;
+                height: 17px;
+                left: -34px;
+                top: 20px;
+            }
+        }
+
+        &:hover {
+            background: #3e3d3d;
+            color: #e4e4e4;
+        }
+
+        & p {
+            margin: 0px 0px 30px 0px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &__title {
+            line-height: 17.5px;
+            font-weight: 600;
+        }
+        &__subtitle {
+            font-size: 10.5px;
+            line-height: 17.5px;
+            margin: 0px 0px 28px 0px;
+            font-weight: 600;
+        }
+        &__text {
+            font-family: $Crimson;
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            line-height: 20px;
+        }
+    }
+}
+
+.team {
+    padding: 78px 0 71px 0;
+    background: url("../img/team.webp") 0 0 / 100% 100% no-repeat;
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        padding: 0 0 28px 0;
+        margin: 0px 0px 31px 0px;
+        background: url("../img/Line__once.png") 0 100% no-repeat;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin: 0px 0px 51px 0px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__card {
+        flex: 0 1 30%;
+        position: relative;
+        min-height: 330px;
+        & img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        margin: 0 15px;
+    }
+}
+
+.card {
+    &__content {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background: rgba(246, 246, 246, 0.808);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 0 30px;
+        opacity: 0;
+        transition: all 1s ease-in;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        font-size: 13.5px;
+        letter-spacing: 1.35px;
+        color: #3e3d3d;
+        font-family: $Monserat;
+        font-weight: 600;
+        margin: 0px 0px 8px 0px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        color: #3e3d3d;
+        font-style: italic;
+        font-family: $Crimson;
+        position: relative;
+        margin: 0px 0px 30px 0px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40%;
+            height: 2px;
+            background: #515151;
+            top: 19px;
+        }
+    }
+
+    &__icons {
+        width: 70px;
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+.portfolio {
+    padding: 80px 0 0 0;
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+    &__up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        padding: 0 0 27px 0;
+        background: url("../img/Line__once.png") 0 100% no-repeat;
+        margin: 0px 0px 37px 0px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin: 0px 0px 52px 0px;
+    }
+}
+
+.tabs {
+    &__items {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 54px 0px;
+    }
+
+    &__btn {
+        margin: 0px 5px 0px 0px;
+        padding: 12px 16px 10px 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        &:last-child {
+            margin: 0px 0px 0px 0px;
+        }
+    }
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 658px;
+        overflow: hidden;
+        display: none;
+
+        &:target {
+            display: flex;
+        }
+    }
+
+    &__image {
+        flex: 1 0 25%;
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:nth-child(1) {
+            height: 417px;
+        }
+        &:nth-child(2) {
+            height: 303px;
+        }
+        &:nth-child(3) {
+            height: 230px;
+        }
+        &:nth-child(4) {
+            height: 417px;
+        }
+        &:nth-child(5) {
+            height: 271px;
+            margin-top: -26px;
+        }
+        &:nth-child(6) {
+            height: 385px;
+            margin-top: -140px;
+        }
+        &:nth-child(7) {
+            height: 459px;
+            margin-top: -214px;
+        }
+        &:nth-child(8) {
+            height: 270px;
+            margin-top: -7px;
+        }
+    }
+}
+
+.prices {
+    background: #e3e3e3;
+    padding: 78px 0 92px 0;
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    &__title {
+        padding: 0 0 27px 0;
+        margin: 0px 0px 27px 0px;
+        background: url("../img/Line__once.png") 0 100% no-repeat;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin: 0px 0px 80px 0px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__card {
+        flex: 0 1 33.333%;
+        margin: 0px 13px;
+        padding: 46px 0 58px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+
+        &__title {
+            font-size: 13.5px;
+            color: #3e3d3d;
+            text-transform: uppercase;
+            font-family: $Monserat;
+            font-weight: 600;
+            margin: 0px 0px 26px 0px;
+        }
+        &__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 51px;
+            height: 50px;
+            border: 2px solid #3e3d3d;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 0px 0px 35px 0px;
+            padding: 5px 5px;
+
+            & img {
+                max-width: 16px;
+                max-height: 20px;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 200%;
+                height: 2px;
+                background: #3e3d3d;
+                left: -200%;
+                top: 50%;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 200%;
+                height: 2px;
+                background: #3e3d3d;
+                right: -200%;
+                top: 50%;
+            }
+        }
+        &__cost {
+            font-size: 68.5px;
+            color: #3e3d3d;
+            font-family: $Monserat;
+            font-weight: 600;
+            margin: 0px 0px 52px 0px;
+        }
+        &__text {
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            font-style: italic;
+            color: #3e3e3e;
+            margin: 0px 0px 52px 0px;
+        }
+        &__btn {
+            padding: 14px 25px;
+            font-family: $Monserat;
+            font-weight: 600;
+        }
+    }
+}
+
+.quality {
+    padding: 52px 0;
+    background: #2d2d2f;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        color: #d8d8d8;
+        font-family: $Monserat;
+        margin: 0px 0px 19px 0px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 20.5px;
+        color: #888888;
+        font-family: $Crimson;
+        letter-spacing: 1.35px;
+    }
+}
+
+.blog {
+    background: #e3e3e3;
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__up {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 83px 0 78px 0;
+    }
+
+    &__title {
+        background: url("../img/Line__once.png") 0 100% no-repeat;
+        padding: 0 0 27px 0;
+        margin: 0px 0px 37px 0px;
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 0 1 50%;
+        display: flex;
+        &:nth-child(1) {
+            background: #2d2d2f;
+        }
+        &:nth-child(2) {
+            background: #555557;
+        }
+        &:nth-child(3) {
+            background: #424244;
+        }
+        &:nth-child(4) {
+            background: #232325;
+        }
+    }
+
+    &__card {
+        flex: 0 1 50%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &__container {
+            padding: 50px 40px 74px 40px;
+        }
+
+        &__suptitle {
+            font-style: italic;
+            font-family: $Crimson;
+            font-size: 12.5px;
+            color: #e3e3e3;
+            margin: 0px 0px 31px 0px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 40%;
+                height: 1px;
+                background: #454545;
+                bottom: -11px;
+            }
+        }
+        &__title {
+            font-size: 13.5px;
+            letter-spacing: 1.35px;
+            font-family: $Monserat;
+            color: #e3e3e3;
+            margin: 0px 0px 37px 0px;
+            position: relative;
+            padding: 0 0 0 15px;
+            &::before {
+                content: "▶";
+                position: absolute;
+                display: block;
+                left: 0;
+            }
+        }
+        &__text {
+            flex: 1 1 auto;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 1.4px;
+            color: #949494;
+        }
+    }
+}
+
+.clients {
+    background: #e3e3e3;
+    &__row {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__up {
+        display: flex;
+        flex-direction: column;
+        padding: 81px 0 123px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        background: url("../img/Line__once.png") 0 100% no-repeat;
+        margin: 0px 0px 38px 0px;
+        padding: 0 0 27px 0;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin: 0px 0px 77px 0px;
+    }
+
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__image {
+        display: flex;
+        flex: 0 0 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__slider {
+        background: url("../img/clients/slider-1.webp") 0 0 / 100% 100% no-repeat;
+        padding: 81px 0 127px 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            left: 0;
+            top: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.322);
+        }
+    }
+
+    &__map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e3e3e3;
+        position: relative;
+    }
+}
+
+.slider {
+    &__body {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    &__img {
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0px 0px 56px 0px;
+        & img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__text {
+        font-size: 20.5px;
+        line-height: 24px;
+        text-align: center;
+        color: #efefef;
+        font-family: $Crimson;
+        font-style: italic;
+        margin: 0px 0px 68px 0px;
+    }
+    &__name {
+        text-transform: uppercase;
+        font-size: 13.5px;
+        letter-spacing: 1.35px;
+        font-family: $Monserat;
+        color: #efefef;
+        text-align: center;
+        margin: 0px 0px 18px 0px;
+    }
+    &__rabota {
+        font-size: 14px;
+        color: #efefef;
+        font-style: italic;
+        font-family: $Crimson;
+        text-align: center;
+    }
+}
+
+@import "_adaptive.scss";
